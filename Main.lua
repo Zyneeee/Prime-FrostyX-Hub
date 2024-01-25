@@ -826,7 +826,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(16105646311)
         ImageButton.BorderSizePixel = 0
         ImageButton.Position = UDim2.new(0, 350, 0, 6)
         ImageButton.Size = UDim2.new(0, 20, 0, 20)
-        ImageButton.Image = "rbxassetid://15860672267"
+        ImageButton.Image = "rbxassetid://16105646311"
         ImageButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
         UICorner_2.CornerRadius = UDim.new(0, 5)
