@@ -116,7 +116,7 @@ function Notif.New(text, timee)
     uicorner_2.Parent = text_button
 
     local image_button = Instance.new("ImageButton")
-    image_button.Image = "rbxassetid://1610#ffffff5646311"
+    image_button.Image = "rbxassetid://16105646311"
     image_button.ImageColor3 = Color3.new(0.784314, 0.784314, 0.784314)
     image_button.ImageRectOffset = Vector2.new(924, 724)
     image_button.ImageRectSize = Vector2.new(36, 36)
@@ -362,7 +362,6 @@ function Update:Window(text,logo,keybind)
     Ping.Size = UDim2.new(0, 225, 0, 25)
     Ping.Font = Enum.Font.GothamSemibold
     Ping.Text = "             | Prime FrostyX Hub |                  "
-    
     Ping.TextColor3 = Color3.fromRGB(255,255,255)
     Ping.TextSize = 14.000
     Ping.TextXAlignment = Enum.TextXAlignment.Left
@@ -937,7 +936,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(16105646311)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 5, 0, 6)
         ImageLabel.Size = UDim2.new(0, 20, 0, 20)
-        ImageLabel.Image = "rbxassetid://16105646311"
+        ImageLabel.Image = "rbxassetid://15860672267"
         ImageLabel.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
         Space.Name = "Space"
@@ -971,7 +970,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(16105646311)
         ImageButton.Position = UDim2.new(0, 352, 0, 4)
         ImageButton.Size = UDim2.new(0, 23, 0, 23)
         ImageButton.ZIndex = 2
-        ImageButton.Image = "rbxassetid://16105646311"
+        ImageButton.Image = "rbxassetid://3926311105"
         ImageButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
         ImageButton.ImageRectOffset = Vector2.new(940, 784)
         ImageButton.ImageRectSize = Vector2.new(48, 48)
@@ -1921,7 +1920,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(16105646311)
 end
 return uitab
 end
----- Blox Fruit ui
+---- KÃ¡ÂºÂ¿t KhÃƒÂºc Ui
 
 function intiAppleHub() 
 _G.antiscan = true
