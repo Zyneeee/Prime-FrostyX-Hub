@@ -14117,49 +14117,5 @@ spawn(function()
             end
         end
     end)
+	
     end)
-------------Extra------------------
-s:AddSeperator("Extra")
-Extra:AddToggle("Auto Factory",_G.Factory.function(value)
-   _G.AutoFactor = value 
-end)
-
-    while _G.Factory do wait()
-				if game.Workspace.Enemies:FindFirstChild("Core") then
-					_G.Core = true
-					_G.AutoFarm = false
-					for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
-						if _G.Core and v.Name == "Core" and v.Humanoid.Health > 0 then
-							repeat wait(.1)
-								repeat totarget(CFrame.new(448.46756, 199.356781, -441.389252)) wait() until _G.StopTween == true or not _G.Factory or (game.Players.LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(448.46756, 199.356781, -441.389252)).Magnitude <= 10
-								EquipWeapon(_G.SelectWeapon)
-								if not game.Players.LocalPlayer.Character:FindFirstChild("HasBuso") then
-									local args = {
-										[1] = "Buso"
-									}
-									game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-								end
-								game:GetService'VirtualUser':CaptureController()
-								game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
-							until not _G.Core or v.Humanoid.Health <= 0  or _G.Factory == false
-						end
-					end
-				elseif game.ReplicatedStorage:FindFirstChild("Core") then
-					_G.Core = true
-					_G.AutoFarm = false
-					repeat totarget(CFrame.new(448.46756, 199.356781, -441.389252)) wait() until _G.StopTween == true or not _G.Factory or (game.Players.LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(448.46756, 199.356781, -441.389252)).Magnitude <= 10
-				elseif _G.Main then
-					_G.Core = false
-					_G.AutoFarm = true
-				end
-			end
-		end)
-	end
-
-	function EquipWeapon(ToolSe)
-		if game.Players.LocalPlayer.Backpack:FindFirstChild(ToolSe) then
-			local tool = game.Players.LocalPlayer.Backpack:FindFirstChild(ToolSe)
-			wait(.4)
-			game.Players.LocalPlayer.Character.Humanoid:EquipTool(tool)
-		end
-	end)
