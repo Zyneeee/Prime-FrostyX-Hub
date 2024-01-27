@@ -11567,7 +11567,7 @@ spawn(function()
             for i,v in pairs(game.Workspace.Enemies:GetDescendants()) do
                 if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
                     pcall(function()
-                        repeat wait(.1)
+                        repeat wait(.0.1)
                             v.Humanoid.Health = 0
                             v.HumanoidRootPart.CanCollide = false
                             sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
