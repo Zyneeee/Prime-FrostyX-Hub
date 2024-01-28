@@ -116,7 +116,7 @@ function Notif.New(text, timee)
     uicorner_2.Parent = text_button
 
     local image_button = Instance.new("ImageButton")
-    image_button.Image = "rbxassetid://16105646311"
+    image_button.Image = "rbxassetid://15860672267"
     image_button.ImageColor3 = Color3.new(0.784314, 0.784314, 0.784314)
     image_button.ImageRectOffset = Vector2.new(924, 724)
     image_button.ImageRectSize = Vector2.new(36, 36)
@@ -936,7 +936,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(16105646311)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 5, 0, 6)
         ImageLabel.Size = UDim2.new(0, 20, 0, 20)
-        ImageLabel.Image = "rbxassetid://15860672267"
+        ImageLabel.Image = "rbxassetid://16105646311"
         ImageLabel.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
         Space.Name = "Space"
@@ -11567,7 +11567,7 @@ spawn(function()
             for i,v in pairs(game.Workspace.Enemies:GetDescendants()) do
                 if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
                     pcall(function()
-                        repeat wait(.0.1)
+                        repeat wait(.1)
                             v.Humanoid.Health = 0
                             v.HumanoidRootPart.CanCollide = false
                             sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
@@ -14117,5 +14117,4 @@ spawn(function()
             end
         end
     end)
-	
     end)
